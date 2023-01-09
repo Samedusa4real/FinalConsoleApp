@@ -21,7 +21,7 @@ namespace ConsoleAppCA.Models
 
         public override string ToString()
         {
-            return $"Sagird: {FullName}, GrupNomresi: {GroupNo},";
+            return $"Sagird: {FullName}, GrupNomresi: {GroupNo}, Zemanetli olma statusu: {Type}";
         }
 
     }
