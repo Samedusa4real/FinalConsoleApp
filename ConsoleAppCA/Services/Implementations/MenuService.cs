@@ -40,7 +40,7 @@ namespace ConsoleAppCA.Services.Implementations
             }
 
             Console.Clear();
-            Console.WriteLine("Zehmet olmasa nomreni daxil edin:");
+            Console.WriteLine("Zehmet olmasa grupun id'sini daxil edin:");
             int.TryParse(Console.ReadLine(), out int groupNo);
 
 
@@ -69,6 +69,8 @@ namespace ConsoleAppCA.Services.Implementations
              string result = academy.CreateGroup((GroupCategory)CategoryNumber, groupNo, type);
 
              Console.WriteLine(result);
+             Console.WriteLine("       ");
+             Console.WriteLine("       ");
         }
 
 
@@ -166,7 +168,7 @@ namespace ConsoleAppCA.Services.Implementations
         {
             Console.Clear();
 
-            Console.WriteLine("Deyisiklik elemek istediyiniz grupun nomresini daxil edin:");
+            Console.WriteLine("Deyisiklik elemek istediyiniz grupun id'sini daxil edin:");
             int.TryParse(Console.ReadLine(), out int no);
 
             Console.Clear();
