@@ -27,9 +27,7 @@ namespace ConsoleAppCA.Services.Implementations
 
             Group group = new Group(category, no, isonline);
             Groups.Add(group);
-            return $"{group.Category.ToString().Substring(0, 1)}{group.No} yaradildi!";
-            Console.WriteLine("          ");
-            Console.WriteLine("          ");
+            return $"{group.Category.ToString().Substring(0, 1)}{group.No} yaradildi!";                        
         }
 
         public void CreateStudent(string name, string surname, int no,bool type)
